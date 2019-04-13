@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Yummy Theme # ex. I m Chuan
-name: Your Name # ex. DONGChuan
-email: my_email_address@lalala.com
+title: 一个角落落 # ex. I m Chuan
+name: Jeff Lan # ex. DONGChuan
+email: jefflan@live.cn
 location: My location # ex. Nice, France
 company: MyCompany
 company_url: my_company_website
-github_url: my_github_url # ex. https://github.com/DONGChuan
-github_username: # ex. DONGChuan
+github_url: https://github.com/jefflan # ex. https://github.com/DONGChuan
+github_username: Jeff Lan# ex. DONGChuan
 description: description_of_your_web_site
 favicon: favicon.png # Image must be in assets/images
 repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.github.io
@@ -30,6 +30,8 @@ gems:
   - rouge
   - kramdown
   - jekyll-github-metadata
+  - jekyll-octicons
+
 
 # Build settings
 markdown: kramdown
@@ -46,9 +48,10 @@ defaults: []
 kramdown:
   input: GFM
   enable_coderay: true
+  syntax_highlighter: rouge
 
-# Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+syntax_highlighter_opts:
+  coderay_line_numbers:  nil
 
 # Pagination
 paginate: 10
